@@ -49,31 +49,58 @@ npm --version
 git --version
 ```
 
-### 1. Clonar o repositório
+### 1. Criar um fork do repositório
 
-```sh
-git clone https://github.com/ifc-dev-web2/FeiraFacilApp
+Acesse o repositório disponibilizado pelo professor:
+
+[https://github.com/ifc-dev-web2/FeiraFacilApp](https://github.com/ifc-dev-web2/FeiraFacilApp)
+
+Na página do repositório:
+
+1. clique no botão **Fork**, localizado no canto superior direito;
+2. selecione a sua conta do GitHub como proprietária;
+3. mantenha o nome `FeiraFacilApp`;
+4. clique em **Create fork**.
+
+Depois desse processo, uma cópia do projeto será criada na sua conta:
+
+```text
+https://github.com/SEU_USUARIO/FeiraFacilApp
 ```
 
-### 2. Acesse a pasta:
+> Substitua `SEU_USUARIO` pelo seu nome de usuário do GitHub.
+
+### 2. Clonar o seu fork
+
+Na página do repositório criado em sua conta, clique no botão **Code** e copie o endereço HTTPS.
+
+Depois, execute:
 
 ```sh
-cd feiraFacilApp
+git clone https://github.com/SEU_USUARIO/FeiraFacilApp.git
 ```
 
-### 3. Instalar as dependências
+> Atenção: clone o repositório da sua própria conta, e não o repositório original do professor.
+
+### 3. Acessar a pasta do projeto
+
+```sh
+cd FeiraFacilApp
+```
+
+### 4. Instalar as dependências
 
 ```sh
 npm install
 ```
 
-### 4. Executar o projeto
+### 5. Executar o projeto
 
 ```sh
 npm run dev
 ```
 
-O terminal mostrará o endereço local da aplicação, na seguinte URL:
+O terminal mostrará o endereço local da aplicação, normalmente:
 
 ```text
 http://localhost:5173
