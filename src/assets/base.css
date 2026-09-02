@@ -77,10 +77,20 @@ p {
 }
 
 .app-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   color: #263238;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
+}
+
+.app-brand__image {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .app-navigation {

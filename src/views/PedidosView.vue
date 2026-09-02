@@ -1,20 +1,15 @@
 <script setup>
   // O aluno deverá implementar a lógica do componente.
-  import { pedidos } from '@/data/pedidos'
+  // import { pedidos } from '@/data/pedidos'
 </script>
 
 <template>
   <main class="container page">
     <header class="page-header">
       <h1>Resumo dos pedidos</h1>
-
       <p>
         Consulte os pedidos finalizados e o total vendido.
       </p>
-
-      <RouterLink :to="{ name: 'comprar' }">
-        Fazer nova compra
-      </RouterLink>
     </header>
 
     <section
@@ -75,10 +70,6 @@
       -->
 
       <!-- Exiba aqui uma mensagem quando nenhum pedido for encontrado -->
-
-
-      <!-- O aluno deverá apresentar os pedidos utilizando v-for. -->
-
       <div class="table-responsive">
         <table>
           <thead>
@@ -92,14 +83,16 @@
           </thead>
 
           <tbody>
-            <tr v-for="pedido in pedidos" :key="pedido.codigo">
-              <!-- Informações do pedido -->
-               <td>{{ pedido.codigo }}</td>
-                <td>{{ pedido.cliente }}</td>
-                <td>{{ pedido.itens.length }}</td>
-                <td>{{ pedido.itens.reduce((total, item) => total + item.quantidade, 0) }}</td>
-                <td>{{ pedido.itens.reduce((total, item) => total + (item.precoUnitario * item.quantidade), 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) }}</td>
-            </tr>
+          <!-- O aluno deverá apresentar os pedidos utilizando v-for. -->
+
+          <!-- Informações do pedido
+               <tr>
+                <td>Codigo</td>
+                <td>Cliente </td>
+                <td>Produto </td>
+                <td>Itens</td>
+                <td>Total</td>
+            </tr> -->
           </tbody>
         </table>
       </div>

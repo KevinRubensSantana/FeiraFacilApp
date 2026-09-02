@@ -7,14 +7,9 @@
   <main class="container page">
     <header class="page-header">
       <h1>Fazer compra</h1>
-
       <p>
         Cadastre o cliente e adicione os produtos do pedido.
       </p>
-
-      <RouterLink :to="{ name: 'pedidos' }">
-        Voltar para os pedidos
-      </RouterLink>
     </header>
 
     <section class="card" aria-labelledby="dados-pedido">
