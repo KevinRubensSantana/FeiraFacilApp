@@ -1,6 +1,6 @@
 <script setup>
   // O aluno deverá implementar a lógica do componente.
-  // import { pedidos } from '@/data/pedidos'
+  import { pedidos } from '@/data/pedidos'
 </script>
 
 <template>
@@ -84,15 +84,14 @@
 
           <tbody>
           <!-- O aluno deverá apresentar os pedidos utilizando v-for. -->
-
-          <!-- Informações do pedido
-               <tr>
-                <td>Codigo</td>
-                <td>Cliente </td>
-                <td>Produto </td>
-                <td>Itens</td>
-                <td>Total</td>
-            </tr> -->
+            <tr v-for="pedido in pedidos" :key="pedido.codigo">
+              <!-- Informações do pedido -->
+               <td>{{ pedido.codigo }}</td>
+                <td>{{ pedido.cliente }}</td>
+                <td>{{ pedido.itens.length }}</td>
+                <td>{{ pedido.itens.reduce((total, item) => total + item.quantidade, 0) }}</td>
+                <td>{{ pedido.itens.reduce((total, item) => total + (item.precoUnitario * item.quantidade), 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) }}</td>
+            </tr>
           </tbody>
         </table>
       </div>
