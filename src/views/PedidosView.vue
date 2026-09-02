@@ -1,6 +1,6 @@
 <script setup>
   // O aluno deverá implementar a lógica do componente.
-  import { pedidos } from '@/data/pedidos'
+  // import { pedidos } from '@/data/pedidos'
 </script>
 
 <template>
@@ -66,7 +66,7 @@
 
       <!--
         O aluno deverá utilizar uma diretiva condicional para
-        apresentar esta mensagem quando nenhum pedido for encontrado.
+        apresentar uma mensagem na tela quando nenhum pedido for encontrado.
       -->
 
       <!-- Exiba aqui uma mensagem quando nenhum pedido for encontrado -->
@@ -83,15 +83,17 @@
           </thead>
 
           <tbody>
-          <!-- O aluno deverá apresentar os pedidos utilizando v-for. -->
-            <tr v-for="pedido in pedidos" :key="pedido.codigo">
-              <!-- Informações do pedido -->
-               <td>{{ pedido.codigo }}</td>
-                <td>{{ pedido.cliente }}</td>
-                <td>{{ pedido.itens.length }}</td>
-                <td>{{ pedido.itens.reduce((total, item) => total + item.quantidade, 0) }}</td>
-                <td>{{ pedido.itens.reduce((total, item) => total + (item.precoUnitario * item.quantidade), 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) }}</td>
-            </tr>
+           <!--
+              Exemplo da estrutura que deverá ser repetida pelo aluno:
+
+              <tr>
+                <td>Código do pedido</td>
+                <td>Nome do cliente</td>
+                <td>Quantidade de produtos diferentes</td>
+                <td>Quantidade total de itens</td>
+                <td>Valor total do pedido</td>
+              </tr>
+            -->
           </tbody>
         </table>
       </div>

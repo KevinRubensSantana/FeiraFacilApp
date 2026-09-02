@@ -108,7 +108,7 @@
 
       <!--
         O aluno deverá utilizar uma diretiva condicional para
-        mostrar esta mensagem quando não houver produtos.
+        mostrar uma mensagem na tela quando não houver produtos.
       -->
 
       <!-- Exiba aqui uma mensagem quando nenhum produto foi adicionado ao pedido.-->
@@ -116,7 +116,6 @@
       <!--
         O aluno deverá utilizar v-for para apresentar os produtos.
       -->
-
       <div class="table-responsive">
         <table>
           <thead>
