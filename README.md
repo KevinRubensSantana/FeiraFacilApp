@@ -220,11 +220,6 @@ Os wireframes são uma referência da organização visual. Não é necessário 
 
 ![Wireframe da página Fazer compra](./docs/feiraFacilApp-fazer-compra.png)
 
-### Resumo dos pedidos
-
-![Wireframe da página Resumo dos pedidos](./docs/feiraFacilApp-resumo-pedidos.png)
-
----
 
 ## 1. Página Fazer compra
 
@@ -275,6 +270,12 @@ O pedido somente poderá ser finalizado quando:
 - houver pelo menos um produto adicionado.
 
 Utilize `v-if`, `v-else` ou `v-show` para apresentar mensagens ao usuário.
+
+---
+
+### Resumo dos pedidos
+
+![Wireframe da página Resumo dos pedidos](./docs/feiraFacilApp-resumo-pedidos.png)
 
 ---
 
